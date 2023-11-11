@@ -4,54 +4,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Сучаня пекарня</title>
+    <link rel="stylesheet" href="./CSS/style.css" />
   </head>
   <body>
     <header>
       <nav>
-        <img src="./images/logo.svg" alt="логотип пекарні" />
+        <a href="">
+          <img src="./images/logo.svg" alt="логотип пекарні" />
+        </a>
         <ul>
           <li>
-            <a href="#" target="_blank">Франшиза</a>
+            <a class="link" href="#traditions-section"> Наші традиції </a>
           </li>
           <li>
-            <a href="#" target="_blank">Наши традиции</a>
+            <a class="link" href="#chefs-section">Шеф-кухарі</a>
           </li>
           <li>
-            <a href="#" target="_blank">Формати</a>
+            <a class="link" href="#formats-section">Формати</a>
           </li>
           <li>
-            <a href="#" target="_blank">Контакти</a>
+            <a class="link" href="#contacts-section">Контакти</a>
           </li>
         </ul>
       </nav>
-      <button type="button">Замовити дзвінок</button>
-      <a href="#"> alt="Логотип сучасної пекарні"/></a>
-      <ul>
-        <li>
-          <a href="#traditions-section"> Наші традиції </a>
-        </li>
-        <li>
-          <a href="#chefs-section">Шеф-кухарі</a>
-        </li>
-        <li>
-          <a href="#formats-section">Формати</a>
-        </li>
-        <li>
-          <a href="#contact-section">Контакти</a>
-        </li>
-      </ul>
+      <button class="button" type="button" alt="Логотип сучасної пекарні">Замовити дзвінок</button>
     </header>
+
     <main>
       <section>
-        <h1>Сучаня пекарня</h1>
+        <h1 class="hero-title" id=""><span class="accent">Сучасна</span> пекарня</h1>
       </section>
-      <section>
-        <ul>
+      <section id="traditions-section">
+        <ul class="advantages-list">
           <li>Великий попит на ринку</li>
           <li>Доступні та бюджетні формати</li>
           <li>Досвідченна команда</li>
         </ul>
-        <h2>Новий формат традицій</h2>
+        <h2 class="section-title">Новий формат традицій</h2>
         <p>
           <span>Shop Bakery</span>
           - — це пекарня, яка взяла все найкраще, і зберегла смак традиційної випічки та натуральність інгредієнтів.
@@ -62,8 +51,8 @@
         </p>
         <img src="./images/man-with-bread.jpg" alt="Чоловік з батонами на тачці" />
       </section>
-      <section>
-        <h2>Наші найкращі Шеф-кухарі</h2>
+      <section id="chefs-section">
+        <h2 class="section-title">Наші найкращі <span class="accent">Шеф-кухарі</span></h2>
         <ul>
           <li>
             <articke>
@@ -88,8 +77,8 @@
           </li>
         </ul>
       </section>
-      <section>
-        <h2>Формати</h2>
+      <section id="formats-section">
+        <h2 class="section-title">Формати</h2>
         <ul>
           <li>
             <article>
@@ -108,8 +97,18 @@
           </li>
         </ul>
       </section>
-      <section>
-        <h2>Приеднуйся до мережі пекарень</h2>
+      <section id="contacts-section">
+        <h2 class="section-title">Приеднуйся до мережі пекарень</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2662.211143650469!2d17.1040866764235!3d48.1447344712443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476c89aa1914ce85%3A0x85bae6b3ef07447e!2zU2xvdmFraWEgR2FyYW50IHMuci5vLiAoUmVzaWRlbmNlIFBlcm1pdCBsINCS0LjQtCDQvdCwINC20LjRgtC10LvRjNGB0YLQstC-INCyINCh0LvQvtCy0LDQutC40Lgp!5e0!3m2!1sen!2ssk!4v1699706191006!5m2!1sen!2ssk"
+          width="603px"
+          height="595px"
+          border-radius="16px"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        >
+        </iframe>
       </section>
     </main>
 
@@ -154,7 +153,7 @@
           </li>
         </ul>
         <a href="#">Політика конфіденційності</a>
-        <p>© 2022 Дані захищені</p>
+        <p>&copy; 2022 Дані захищені</p>
       </address>
     </footer>
   </body>
