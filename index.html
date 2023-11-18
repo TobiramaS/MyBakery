@@ -157,7 +157,7 @@
                 </article>
               </li>
             </ul>
-            <button class="carousel-button" type="button">
+            <button class="carousel-button next" type="button">
               <svg with="16" height="16">
                 <use href="./images/icon.svg#icon-Arrow-1"></use>
               </svg>
@@ -171,7 +171,60 @@
             <div class="contact-form">
               <h2 class="contacts-title section-title">Приеднуйся до мережі пекарень</h2>
               <p>Заповни форму, щоб ми звʼязались з тобою!</p>
-              <!-- тут буде форма -->
+
+              <form name="contact-form" autocomplete="off">
+                <div class="form-field">
+                  <label class="form-label visually-hidden" for="user-name">Iм'я</label>
+                  <input
+                    class="form-input"
+                    type="text"
+                    id="user-name"
+                    name="user-name"
+                    placeholder="Iм'я"
+                    required
+                    minlength="15"
+                    maxlength="30"
+                  />
+                </div>
+
+                <div class="form-field">
+                  <label class="form-label visually-hidden" for="user-tel">Телефон</label>
+                  <input
+                    class="form-input"
+                    type="tel"
+                    id="user-tel"
+                    name="user-tel"
+                    placeholder="Телефон"
+                    required
+                    minlength="12"
+                    maxlength="13"
+                    pattern="^\+[0-9]{12}"
+                  />
+                </div>
+
+                <div class="form-field">
+                  <label class="form-label visually-hidden" for="user-email">Електронна пошта</label>
+                  <input
+                    class="form-input"
+                    type="email"
+                    id="user-email"
+                    name="user-email"
+                    placeholder="Електронна пошта"
+                    required
+                    minlength="12"
+                    maxlength="40"
+                  />
+                </div>
+
+                <input type="checkbox" id="term-condition" name="term-condition" required />
+                <label for="term-condition">Yes, I agree !</label>
+
+                <button class="button form-button" type="submit">Замовити дзвінок</button>
+                <p class="form-terms">
+                  Натискаючи на кнопку я погоджуюсь з
+                  <a class="form-terms-link" href="#">політикою конфіденційності</a>
+                </p>
+              </form>
             </div>
             <iframe
               class="contact-map"
@@ -245,10 +298,69 @@
         </div>
       </div>
     </footer>
-    <!-- Buttom call -->
-    <div class="backdrop">
+    <!-- Buttom call / is-hidden -->
+    <div class="backdrop is-hidden">
       <div class="modal">
-        <button class="modal-btn-close" type="button">Close</button>
+        <button class="modal-btn-close" type="button">
+          <svg with="16" height="16">
+            <use href="./images/icon.svg#icon-cross"></use>
+          </svg>
+        </button>
+        <h2 class="contact-form-title">Замовити дзвінок</h2>
+        <p class="contact-form-info">Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
+        <form name="contact-form" autocomplete="off">
+          <div class="form-field">
+            <label class="form-label visually-hidden" for="user-name">Iм'я</label>
+            <input
+              class="form-input"
+              type="text"
+              id="user-name"
+              name="user-name"
+              placeholder="Iм'я"
+              required
+              minlength="15"
+              maxlength="30"
+            />
+          </div>
+
+          <div class="form-field">
+            <label class="form-label visually-hidden" for="user-tel">Телефон</label>
+            <input
+              class="form-input"
+              type="tel"
+              id="user-tel"
+              name="user-tel"
+              placeholder="Телефон"
+              required
+              minlength="12"
+              maxlength="13"
+              pattern="^\+[0-9]{12}"
+            />
+          </div>
+
+          <div class="form-field">
+            <label class="form-label visually-hidden" for="user-email">Електронна пошта</label>
+            <input
+              class="form-input"
+              type="email"
+              id="user-email"
+              name="user-email"
+              placeholder="Електронна пошта"
+              required
+              minlength="12"
+              maxlength="40"
+            />
+          </div>
+
+          <input type="checkbox" id="term-condition" name="term-condition" required />
+          <label for="term-condition">Yes, I agree !</label>
+
+          <button class="button form-button" type="submit">Замовити дзвінок</button>
+          <p class="form-terms">
+            Натискаючи на кнопку я погоджуюсь з
+            <a class="form-terms-link" href="#">політикою конфіденційності</a>
+          </p>
+        </form>
       </div>
     </div>
     <script src="./main.js"></script>
