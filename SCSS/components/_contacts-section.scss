@@ -1,0 +1,33 @@
+.contacts-section {
+  padding-bottom: 96px;
+}
+
+.contact-container {
+  display: flex;
+  gap: 32px;
+}
+
+.contact-map {
+  flex-shrink: 0;
+  border: none;
+  border-radius: 16px;
+  width: 600px;
+  height: 680px;
+}
+
+.contacts-title {
+  margin-bottom: 16px;
+}
+
+.contact-form-title {
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 84px;
+  text-align: center;
+  padding-bottom: 0;
+}
+.contact-form-info {
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+}

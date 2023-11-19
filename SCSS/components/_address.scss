@@ -1,0 +1,29 @@
+.address-list,
+.address-info {
+  flex-grow: 1;
+}
+
+.adress-link {
+  color: var(--color-primary-light);
+  font-size: 16px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.adress-link:hover {
+  color: var(--color-brand-normal);
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.adress-copyright {
+  font-size: 15px;
+  color: var(--color-primary-light);
+}
+
+.adress-icon {
+  fill: var(--color-primary-light);
+}
+.adress-icon:hover {
+  fill: var(--color-brand-normal);
+}

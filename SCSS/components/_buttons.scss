@@ -1,0 +1,47 @@
+.button {
+  color: var(--color-primary-light);
+  border-radius: 8px;
+  border: 2px solid var(--color-brand-normal);
+  background: var(--color-brand-normal);
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 16px 32px;
+}
+.button:hover {
+  background-color: transparent;
+  color: var(--color-brand-dark);
+}
+
+.button:disabled {
+  background-color: lightgray;
+  color: gray;
+  border-color: currentColor;
+}
+
+.carousel-button:hover {
+  background-color: var(--color-primary-dark);
+  fill: var(--color-primary-light);
+  transform: scale(1.1);
+  transition: transform 0.5s;
+  transition: 0.5s;
+}
+
+.carousel-button.next {
+  transform: rotate(180deg);
+}
+
+.carousel-button {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid var(--color-primary-dark);
+  cursor: pointer;
+  flex-shrink: 0;
+}

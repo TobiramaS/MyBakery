@@ -1,0 +1,50 @@
+.chefs-list {
+  display: flex;
+  gap: 30px;
+  row-gap: 45px;
+  flex-wrap: wrap;
+}
+
+.chefs-card {
+  display: flex;
+  gap: 30px;
+}
+
+.chefs-item {
+  flex-basis: calc((100% - 30px) / 2);
+}
+
+.chef-title {
+  max-width: 520px;
+  margin: 0 auto 80px;
+}
+
+.chef-photo {
+  border-radius: 4px 4px 4px 200px;
+  box-shadow: -16px 16px 0 0 var(--color-primary-light), -16px 16px 0 2px var(--color-secondary-dark);
+}
+
+.chefs-title {
+  max-width: 540px;
+  margin: 0 auto 80px;
+  position: relative;
+}
+
+.chefs-title::after,
+.chefs-title::before {
+  display: block;
+  width: 360px;
+  border: 2px solid var(--color-brand-light);
+  content: "";
+  position: absolute;
+  bottom: 0;
+  bottom: 24px;
+}
+
+.chefs-title::before {
+  left: -360px;
+}
+
+.chefs-title::after {
+  right: -360px;
+}

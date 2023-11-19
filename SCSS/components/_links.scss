@@ -1,0 +1,13 @@
+.link {
+  color: var(--color-primary-light);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.link:hover {
+  color: var(--color-brand-normal);
+}
+
+.link:active {
+  color: var(--color-primary-dark);
+}
