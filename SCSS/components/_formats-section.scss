@@ -6,12 +6,14 @@
 
 .formats-list {
   display: flex;
-  gap: 20px;
+  gap: 10px;
   flex-wrap: wrap;
 }
 
 .format-card {
+  position: relative;
   height: 444px;
+  width: 349px;
   border-radius: 16px;
   border: 1px solid lightgray; /* remove */
   padding: 24px;
@@ -21,10 +23,13 @@
     rgba(49, 38, 26, 0.71) 72.92%,
     var(--color-primary-dark) 100%
   );
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .format-card:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
   transition: transform 0.5s;
 }
 
@@ -35,6 +40,7 @@
 .format-title {
   font-size: 24px;
   font-weight: 600;
+  color: var(--color-primary-light);
 }
 
 .formats-items {
@@ -45,4 +51,15 @@
   font-size: 14px;
   font-weight: 300;
   word-wrap: break-word;
+  color: var(--color-primary-light);
+}
+
+.format-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  border-radius: 16px;
 }

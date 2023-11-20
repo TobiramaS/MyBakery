@@ -45,3 +45,25 @@
   cursor: pointer;
   flex-shrink: 0;
 }
+
+.header_button {
+  display: none;
+
+  @media screen and (min-width: $bp-desktop) {
+    display: block;
+  }
+}
+
+.header_burger {
+  display: block;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  fill: var(--color-primary-light);
+
+  @media screen and (min-width: $bp-desktop) {
+    display: none;
+  }
+}

@@ -6,7 +6,11 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding: 32px 128px;
+  padding: 16px;
+
+  @media screen and (min-width: $bp-desktop) {
+    padding: 32px 128px;
+  }
 }
 
 .header-nav {
@@ -16,8 +20,12 @@
 }
 
 .header-menu {
-  display: flex;
-  gap: 64px;
-  flex-grow: 1;
-  justify-content: center;
+  display: none;
+
+  @media screen and (min-width: $bp-desktop) {
+    display: flex;
+    gap: 64px;
+    flex-grow: 1;
+    justify-content: center;
+  }
 }
